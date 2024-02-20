@@ -1,61 +1,77 @@
+/* Base styles */
+body {
+  background: linear-gradient(to right, #282828, #000000);
+  font-family: 'Jomolhari'; /* Ensure a fallback font like sans-serif is provided */
+  color: #FFFFFF; /* Default text color for better readability */
+}
+
 .navbar {
-    display: flex; /* Use flexbox layout */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3%;
-    margin-bottom: 5%;
-    justify-content: space-between; /* Space out the nav items */
-    width: 90%; /* Full width to spread out nav items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure items are vertically centered */
+  margin: 3% auto 5%;
+  width: 90%;
+  background-color: transparent;
+}
+
+.custom-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Since we're now using Bootstrap's container for alignment, 
+ specific .navbar-nav styles for display and justify-content might not be needed. 
+ Adjust based on the final layout appearance. */
+
+.navbar .nav-link {
+  color: #FFFFFF;
+  margin-right: 15%; /* Adjust margin as per your layout needs */
+  font-size: 15pt;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #5e5e5e;
+  text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #182027;
+  color: #fff; /* Ensure footer text is white for readability */
+  padding: 2rem 0; /* Provide padding for spacing */
+  text-align: center; /* Center-align footer content */
+}
+
+
+.links {
+  color: #fff;
+  transition: color 0.3s ease; /* Smooth color transition for links */
+}
+
+.links:hover {
+  color: #1f68b5; /* Lighter shade on hover */
+
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack navbar items vertically on smaller screens */
   }
 
-.navbar-nav{
-    justify-content: center;
+  .navbar .nav-link {
+      margin-right: 0;
+      margin-bottom: 1rem; /* Space out links vertically */
+  }
+
+  .footer {
+      padding: 1rem 0; /* Adjust footer padding on smaller screens */
+  }
 }
 
-.navbar .nav-link{
-    color: #FFFFFF;
-    margin-right: 15%;
-    font-size: 15pt;
-}
-
-.nav-link:hover{
-      color: #5e5e5e;
-      text-decoration: underline;
-}
-
-body {
-      background: linear-gradient(to right, #282828, #000000);
-      font-family: 'Jomolhari';
-}
-
-.footer {
-  background-color: #343a40; /* Dark background */
-}
-
-.footer .text-secondary:hover {
-  color: #d6d6d6 !important; /* Lighter shade for hover effect, with increased specificity */
-}
-
-.footer a {
-  color: #fff; /* White color for the links */
-  transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-.footer a:hover {
-  color: #d6d6d6; /* Lighter shade for hover effect */
-}
-
-.footer a:hover {
-  color: #d6d6d6; /* Lighter shade for hover effect */
-}
-
-
-.footer .btn-outline-secondary {
-  border-color: #fff; /* White border for the button */
-  color: #fff; /* White text for the button */
-}
-
-.footer .btn-outline-secondary:hover {
-  color: #343a40; /* Dark text on hover */
-  border-color: #ccc; /* Lighter border on hover */
+/* Additional media query for larger screens, if necessary */
+@media (min-width: 992px) {
+  .navbar .nav-link {
+      font-size: 18pt; /* Larger font size for larger screens */
+  }
 }

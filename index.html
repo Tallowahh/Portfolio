@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerrard Wallace's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <!-- Row to hold the two columns -->
-            <!-- Column for the navbar -->
-            <div class="col d-flex justify-content-center">
-              <div class="navbar-nav">
-                <h1 id="target-navbar" class="nav-link" style="text-decoration: underline;">GW</h1>
-            </div>
-            <div class="col d-flex justify-content-center">
-              <div class="navbar-nav">
-                <a class="nav-link" href="#target-about">About</a>
-                <a class="nav-link" href="#target-works">Works</a>
-                <a class="nav-link" href="#target-skills">Skills</a>
-                <a class="nav-link" href="#target-extras">Music</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible Content -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto"> <!-- mx-auto centers the nav-items within the collapse -->
+          <li class="nav-item mx-4">
+              <a class="nav-link fs-5" href="#target-about">About</a>
+          </li>
+          <li class="nav-item mx-4">
+              <a class="nav-link fs-5" href="#target-works">Works</a>
+          </li>
+          <li class="nav-item mx-4">
+              <a class="nav-link fs-5" href="#target-skills">Skills</a>
+          </li>
+          <li class="nav-item mx-4">
+              <a class="nav-link fs-5" href="#target-extras">Music</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
       
       <div class="container mt-4">
         <div class="row">
@@ -93,148 +98,93 @@
         </div>
   
 <div class="container" style="width: 80%;">
-  <div class="row" style="margin-top: 1%;">
-    <div class="col-1" style="background-color: transparent;">
-    </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <a href="https://github.com/Tallowahh/Ada-Word-Analyzer" target="_blank">
-              <img src="assets\text1.png" class="img-fluid mx-auto d-block" alt="Code Snippet">
-            </a>
-          </div>
+  <div class="row" style="margin-bottom: 20px;">
+    <!-- First Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF; margin-bottom:20px;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF;"> 
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://github.com/Tallowahh/Ada-Word-Analyzer" target="_blank">
+            <img src="assets/text1.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          Word-Analyzer
-        </div>
-        <div style="position: absolute; bottom: 0; right: 0; margin-right: 5%;">
-          Demo
+        <div class="card-body">
+          <p class="card-text">Ada Word-Analyzer</p>
         </div>
       </div>
     </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <a href="https://github.com/Tallowahh/Polynomial-Calculator" target="_blank">
-              <img src="assets\text2.png" class="img-fluid mx-auto d-block" alt="Code Snippet">
-            </a>
-          </div>
+    <!-- Second Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;">
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://github.com/Tallowahh/Polynomial-Calculator" target="_blank">
+            <img src="assets/text2.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          Polynomial Calculator
-        </div>
-        <div style="position: absolute; bottom: 0; right: 0; margin-right: 5%;">
-          Demo
+        <div class="card-body">
+          <p class="card-text">Polynomial-Calculator</p>
         </div>
       </div>
-    </div>
-    <div class="col-1" style="background-color: transparent;">
     </div>
   </div>
 
-  <!-- Second Row -->
-  <div class="row" style="margin-top: 1%;">
-    <div class="col-1" style="background-color: transparent;">
-    </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a href="https://github.com/Tallowahh/Music-Emotion-Assistant" target="_blank">
-              <img src="assets\text3.png" class="img-fluid mx-auto d-block" alt="Code Snippet">
-            </a>
-          </div>
+  <div class="row" style="margin-top: 20px;">
+    <!-- First Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;"> 
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://github.com/Tallowahh/Music-Emotion-Assistant" target="_blank">
+            <img src="assets/text3.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          <!-- Your content for the corner div -->
-          Music Emotion Assistant
-        </div>
-        <div style="position: absolute; bottom: 0; right: 0; margin-right: 5%;">
-          <!-- Your content for the corner div -->
-          Demo
+        <div class="card-body">
+          <p class="card-text">Music Emotion Assistant</p>
         </div>
       </div>
     </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a href="https://github.com/Tallowahh/Connect-Four" target="_blank">
-              <img src="assets\Logo3.png" class="img-fluid mx-auto d-block" alt="Code Snippet">
-            </a>
-          </div>
+    <!-- Second Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;">
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://github.com/Tallowahh/Connect-Four" target="_blank">
+            <img src="assets/text4.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%; color:#659983">
-          <!-- Your content for the corner div -->
-          Connect Four (In Development)
-        </div>
-        <div style="position: absolute; bottom: 0; right: 0; margin-right: 5%;">
-          <!-- Your content for the corner div -->
-          Demo
+        <div class="card-body">
+          <p class="card-text">Connect Four</p>
         </div>
       </div>
-    </div>
-    <div class="col-1" style="background-color: transparent;">
     </div>
   </div>
 
-  <!-- Third Row -->
-  <div class="row" style="margin-top: 1%;">
-    <div class="col-1" style="background-color: transparent;">
-
-    </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a class="nav-link" href="#target-navbar">
-              <img src="assets\Logo3.png" class="img-fluid mx-auto d-block" alt="Code Snippet">
-            </a>
-          </div>
+  <div class="row" style="margin-top: 20px;">
+    <!-- First Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;"> 
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="#navbarNav">
+            <img src="assets/Portfoliopicture.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          <!-- Your content for the corner div -->
-          This website :3
-        </div>
-        <div style="position: absolute; bottom: 0; right: 0; margin-right: 5%;">
-          <!-- Your content for the corner div -->
-          Demo
+        <div class="card-body">
+          <p class="card-text">This Website</p>
         </div>
       </div>
     </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a href="http://google.ca" target="_blank">
-              <img src="assets\Logo3.png" class="img-fluid mx-auto d-block" alt="Code Snippet">
-            </a>
-          </div>
+    <!-- Second Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;">
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://tallowahh.github.io/ValetLink/ " target="_blank">
+            <img src="assets/Valetscreenshot.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          <!-- Your content for the corner div -->
-          Pantheon Capital
-        </div>
-        <div style="position: absolute; bottom: 0; right: 0; margin-right: 5%;">
-          <!-- Your content for the corner div -->
-          Demo
+        <div class="card-body">
+          <p class="card-text">ValetParking Monitor</p>
         </div>
       </div>
-    </div>
-    <div class="col-1" style="background-color: transparent;">
     </div>
   </div>
-</div>
+  </div>
 
 <div style="text-align: center; margin-left: 7%; margin-right: 7%; margin-top: 3%; margin-bottom: 3%;">
   <hr id="target-skills" style="border-top: 1px solid #d3d3d3; width: 100%; margin: 0;">
@@ -279,172 +229,124 @@
     </div>
   </div>
 </div>
+
 <div style="text-align: center; margin-left: 7%; margin-right: 7%; margin-top: 3%; margin-bottom: 3%;">
   <hr id="target-extras" style="border-top: 1px solid #d3d3d3; width: 100%; margin: 0;">
 </div>
 
 <div class="container" style="width: 80%;">
-  <!-- First Row -->
-  <div class="row" style="margin-top: 1%;">
-    <div class="col-1" style="background-color: transparent;">
-    </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a href="https://soundcloud.com/innertoneproductions/107k-a-year/s-wYwU1mQPs1N?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
-              <img src="assets\Logo3.png" class="img-fluid mx-auto d-block" alt="Innertone Logo">
-            </a>
-          </div>
+  <div class="row" style="margin-bottom: 20px;">
+    <!-- First Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF; margin-bottom:20px;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF;"> 
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://soundcloud.com/innertoneproductions/107k-a-year/s-wYwU1mQPs1N?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+            <img src="assets/Logo2.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          <!-- Your content for the corner div -->
-          107k A Year
+        <div class="card-body">
+          <p class="card-text">107K A Year</p>
         </div>
       </div>
     </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a href="https://soundcloud.com/innertoneproductions/a-flaunting-mistress?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
-              <img src="assets\Logo3.png" class="img-fluid mx-auto d-block" alt="Innertone Logo">
-            </a>
-          </div>
+    <!-- Second Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;">
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://soundcloud.com/innertoneproductions/a-flaunting-mistress?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+            <img src="assets/Logo2.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          <!-- Your content for the corner div -->
-          Flaunting Mistress
+        <div class="card-body">
+          <p class="card-text">A Flaunting Mistress</p>
         </div>
       </div>
-    </div>
-    <div class="col-1" style="background-color: transparent;">
     </div>
   </div>
 
-  <!-- Second Row -->
-  <div class="row" style="margin-top: 1%;">
-    <div class="col-1" style="background-color: transparent;">
-    </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a href="https://soundcloud.com/innertoneproductions/tradition?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
-              <img src="assets\Logo3.png" class="img-fluid mx-auto d-block" alt="Innertone Logo">
-            </a>
-          </div>
+  <div class="row" style="margin-top: 20px;">
+    <!-- First Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;"> 
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://soundcloud.com/innertoneproductions/tradition?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+            <img src="assets/Logo2.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          <!-- Your content for the corner div -->
-          Tradition of Few
+        <div class="card-body">
+          <p class="card-text">Tradition of Few</p>
         </div>
       </div>
     </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a href="https://soundcloud.com/innertoneproductions/stance-for-freedom?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
-              <img src="assets\Logo3.png" class="img-fluid mx-auto d-block" alt="Innertone Logo">
-            </a>
-          </div>
+    <!-- Second Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;">
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://soundcloud.com/innertoneproductions/stance-for-freedom?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+            <img src="assets/Logo2.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          <!-- Your content for the corner div -->
-          Stance for Freedom
+        <div class="card-body">
+          <p class="card-text">Stance For Freedom</p>
         </div>
       </div>
-    </div>
-    <div class="col-1" style="background-color: transparent;">
     </div>
   </div>
 
-  <!-- Third Row -->
-  <div class="row" style="margin-top: 1%;">
-    <div class="col-1" style="background-color: transparent;">
-
-    </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center hover-zoom">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a href="https://soundcloud.com/innertoneproductions/a-guise-of-my-innertone?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
-              <img src="assets\Logo3.png" class="img-fluid mx-auto d-block" alt="Innertone Logo">
-            </a>
-          </div>
+  <div class="row" style="margin-top: 20px;">
+    <!-- First Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;"> 
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://soundcloud.com/innertoneproductions/a-guise-of-my-innertone?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+            <img src="assets/Logo2.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
         </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          <!-- Your content for the corner div -->
-          A Guise Of My Innertone
-        </div>
-        
-      </div>
-    </div>
-    <div class="col d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
-      <div class="card text-center position-relative" style="background-color:#000000; width: 60%; padding: 5%; border: 1.5px solid white;">
-        <div class="card-body d-flex justify-content-center align-items-center">
-          <!-- Content for first card -->
-            <div style="width:100px; height:100px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color:#1c1c1c;">
-            <!-- Image centered inside this div -->
-            <a href="https://soundcloud.com/innertoneproductions/commotion?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
-              <img src="assets\Logo3.png" class="img-fluid mx-auto d-block" alt="Innertone Logo">
-            </a>
-          </div>
-        </div>
-        <div style="position: absolute; bottom: 0; left: 0; margin-left: 5%;">
-          <!-- Your content for the corner div -->
-          Commotion
+        <div class="card-body">
+          <p class="card-text">A Guise of My InnerTone</p>
         </div>
       </div>
     </div>
-    <div class="col-1" style="background-color: transparent; margin-bottom: 5%;">
+    <!-- Second Column -->
+    <div class="col-md-6 d-flex justify-content-center" style="background-color: transparent; color:#FFFFFF;">
+      <div class="card text-center" style="width: 15rem; background-color: black; border: 1px solid #FFFFFF; margin-bottom:20px;">
+        <div class="card-img-top d-flex justify-content-center align-items-center" style="height: 180px;">
+          <a href="https://soundcloud.com/innertoneproductions/commotion?si=d488c4a90a7840e587482e1efaa8ea7b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+            <img src="assets/Logo2.png" alt="Circular Image" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          </a>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Commotion</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
 <div style="text-align: center; margin-left: 7%; margin-right: 7%; margin-top: 3%; margin-bottom: 3%;">
   <hr id="target-skills" style="border-top: 1px solid #d3d3d3; width: 100%; margin: 0;">
 </div>
 
-<footer class="footer bg-dark text-white py-3">
-  <div class="container text-center">
-    <!-- Copyright Notice -->
-    <div class="row mb-2">
-      <div class="col">
-        <p>© 2023 Gerrard Wallace/InnerTone</p>
+<footer class="footer text-white py-3">
+    <div class="container text-center">
+      <div class="row mb-2">
+        <div class="col">
+          <p>© 2023 Gerrard Wallace | InnerTone</p>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/gerrard-wallace/" target="_blank" class="links me-4">LinkedIn</a>
+          <a href="https://github.com/Tallowahh" target="_blank" class="links">GitHub</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="mailto:gerrardwallace@hotmail.com" class="btn btn-outline-secondary">Contact Me</a>
+        </div>
       </div>
     </div>
-
-    <!-- Social Links -->
-    <div class="row mb-3">
-      <div class="col d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/gerrard-wallace/" target="_blank" class="text-secondary me-4">LinkedIn</a>
-        <a href="https://github.com/Tallowahh" target="_blank" class="text-secondary">GitHub</a>
-      </div>
-    </div>
-
-    <!-- Contact Me Button -->
-    <div class="row">
-      <div class="col">
-        <a href="mailto:gerrardwallace@hotmail.com" class="btn btn-outline-secondary">Contact Me</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    </script>
-</body>
-
-</html>     
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+  </html>  
